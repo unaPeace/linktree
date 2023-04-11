@@ -16,15 +16,58 @@
 
   <div style="overflow:auto">
     <div class="menu">
+      <!--
       <div class="menuitem"><a href="https://sbondabadance.co.za/" target="_blank">SboNdaba Dance (Web)</a></div>
       <div class="menuitem"><a href="https://advertiseherebranding.co.za/" target="_blank">Advertise Here (Web)</a></div>
       <div class="menuitem"><a href="https://www.youtube.com/watch?v=9AfynXgiVF8" target="_blank">The Birds And The Bees (Anim)</a></div>
       <div class="menuitem"><a href="https://mwiba.netlify.app/" target="_blank">Online Portfolio (Under Dev)</a></div>
+      -->
+      <h2>Links</h2>
+
+      <button class="accordion">SboNdaba Dance</button>
+      <div class="panel">
+        <p>
+          Roles:
+          <br><br>
+          Design, digital content design, development and maintanance of website and HR dashboard using Angular and Firebase. Digital content creator resposnible for videography, visual content design, sound design and graphic design.
+        </p>
+        <a href="https://sbondabadance.co.za/" target="_blank" class="button">Visit website</a>
+      </div>
+
+      <button class="accordion">Advertise Here</button>
+      <div class="panel">
+        <p>
+          Roles:
+          <br><br>
+          Design, digital content design, development and maintanance of website using Angular and Firebase and a CMS connected via a Contentful API. Digital content creator resposnible for animation, visual content design and graphic design.
+        </p>
+        <a href="https://advertiseherebranding.co.za/" target="_blank" class="button">Visit website</a>
+      </div>
+
+      <button class="accordion">The Birds And The Bees</button>
+      <div class="panel">
+        <p>
+          Roles:
+          <br><br>
+          Co-producer, writer, and animator. This video is a frame by frame animation of a collaboration with LeDama, a UK based artist.
+        </p>
+        <a href="https://www.youtube.com/watch?v=9AfynXgiVF8" target="_blank" class="button">Watch video</a>
+      </div>
+
+      <button class="accordion">Mwiba (under development)</button>
+      <div class="panel">
+        <p>
+          Roles:
+          <br><br>
+          Design, content design, development of website.
+        </p>
+        <a href="https://mwiba.netlify.app/" target="_blank" class="button">Visit website</a>
+      </div>
     </div>
 
     <div class="main">
       <h2>Projects</h2>
-      <p>A sample of projects showcasing the skills and experience of Rhulani Ngobeni.</p>
+      <p>A detailed orientated multimedia designer/digital artist. This Portfolio is a sample of projects showcasing the skills and experience of the creative.</p>
       <img src="peace.jpg" style="width:100%">
     </div>
 
@@ -42,13 +85,31 @@
       <h2>City</h2>
       <p>Cape Town, South Africa</p>
       <h2>Social Media</h2>
-      <a href="https://www.instagram.com/rhud3.boy/" target="_blank">instagram</a>
+      <a href="https://www.instagram.com/rhud3.boy/" target="_blank" class="button">instagram</a>
     </div>
   </div>
 
 
   <div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> This web page is
-    Projects on this link tree are a showcase of various skills ranging from animation to coding. Contact the creator to find out how these projects were developed.</div>
+    Projects on this link tree are a showcase of various skills ranging from animation to coding. Contact the creator to
+    find out how these projects were developed.</div>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+      </script>
 
 </body>
 
